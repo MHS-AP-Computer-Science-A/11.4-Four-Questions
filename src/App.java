@@ -1,27 +1,21 @@
+import java.util.Scanner;
+
 public class App {
     public static void main(String[] args) throws Exception {
-        TreeNode<String> root = new TreeNode<String>("A");
-        root.setLeft(new TreeNode<String>("B"));
-        root.setRight(new TreeNode<String>("C"));
-        root.getLeft().setLeft(new TreeNode<String>("D"));
-        root.getLeft().setRight(new TreeNode<String>("E"));
-        root.getRight().setRight(new TreeNode<String>("F"));
+        // BUILD YOUR TREE
+        TreeNode<String> root = new TreeNode<String>("Replace this with your first question");
 
-        System.out.println("Preorder Traversal");
-        preorder(root);
 
-      
+
+
+        // PLAY GAME
+        Scanner input = new Scanner(System.in);
+        
+        TreeNode<String> current = root;
+        
+        System.out.println(current.getValue());
+        String answer = input.getNext();
 
     }
 
-    public static void preorder(TreeNode<String> node) {
-        if (node != null) {
-            // Visit the node first (pre)
-            System.out.println(node.getValue());
-            // Recurse left
-            preorder(node.getLeft());
-            // Recurse right
-            preorder(node.getRight());
-        }
-    }
 }
