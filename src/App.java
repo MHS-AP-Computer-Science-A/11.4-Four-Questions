@@ -14,7 +14,7 @@ public class App {
         TreeNode<String> current = root;
         
         System.out.println(current.getValue());
-        String answer = input.getNext();
+        String answer = input.next();
 
     }
 
